@@ -1,6 +1,6 @@
 import sys
 
-try: colorInternal = sys.stdout.shell
+try: colorInternal = sys.stdout.shell.write
 except AttributeError: raise RuntimeError("Use IDLE")
 
 colorDef = {
